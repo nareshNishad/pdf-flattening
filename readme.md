@@ -89,30 +89,6 @@ pdf2img.convert('path/to/your/document.pdf')
 
 ```
 
-Flattening a PDF
-
-```
-
-const Flattener = require('[Your Package Name]').Flattener;
-const fs = require('fs');
-const flattener = new Flattener();
-
-// Read your PDF into a buffer
-const buffer = fs.readFileSync('path/to/your/pdf.pdf');
-
-flattener.flatten(buffer, {
-path: './temp',
-type: 'jpg',
-density: 200,
-})
-.then(buffer => {
-// buffer contains the flattened PDF
-fs.writeFileSync('path/to/your/flattened.pdf', buffer);
-})
-.catch(err => console.error(err));
-
-```
-
 ## API Reference
 
 ### Pdf2Img
