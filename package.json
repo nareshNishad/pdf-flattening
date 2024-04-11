@@ -1,6 +1,6 @@
 {
   "name": "pdf-flattening",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A nodejs module for flattening a PDF file",
   "main": "index.js",
   "scripts": {
